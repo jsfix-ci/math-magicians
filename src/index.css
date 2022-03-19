@@ -1,7 +1,4 @@
 :root {
-  --primary: #d81e5b;
-  --secondary: #8c38ff;
-  --dark: #131a26;
   --light: #eee;
 }
 
@@ -16,63 +13,39 @@ body {
   background-color: var(--light);
 }
 
-.App {
-  display: flex;
-  min-height: 100vh;
-  justify-content: center;
-  align-items: center;
-}
-
 .calculator {
-  width: 100%;
-  max-width: 400px;
-  background-color: #fff;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 2px 64px rgba(0, 0, 0, 0.2);
+  width: 30%;
+  margin: auto 35%;
 }
 
-.display {
-  padding: 16px;
-  text-align: right;
-  background-color: var(--dark);
-  color: white;
-  font-size: 24px;
-  font-weight: 300;
-}
-
-button {
-  appearance: none;
-  border: none;
-  outline: none;
+.return-section {
+  background-color: rgb(133, 134, 147);
+  padding: 10px;
   color: #fff;
-  font-size: 20px;
-  padding: 16px;
+  text-align: right;
+  font-size: 30px;
+  width: auto;
+  border-radius: 0.4rem;
+}
+
+.digits-elts {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.button-section {
+  padding: 20px;
   cursor: pointer;
-  transition: 0.4s;
+  border: 1px solid #dadada;
+  border-radius: 0.4rem;
+  font-size: large;
 }
 
-button:hover {
-  opacity: 0.9;
+.operator {
+  background-color: #ff9100fd;
 }
 
-.operators {
-  display: flex;
-}
-
-.operators button {
-  flex: 1 1 0%;
-  background-color: var(--primary);
-  font-weight: 700;
-}
-
-.digits {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.digits button {
-  flex: 1 1 33.3333%;
-  max-width: 33.3333%;
-  background-color: var(--dark);
+.end {
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
 }
