@@ -60,6 +60,7 @@ const Calculator = () => {
   ));
 
   return (
+    <div className="App">
     <section className="calculator">
       <h1>Calculator</h1>
       <div className="return-section">{returnSection()}</div>
@@ -72,6 +73,7 @@ const Calculator = () => {
         <button type="button" className="button-section operator" value="=" onClick={() => { calculator(digitObj, '='); }}>=</button>
       </span>
     </section>
+    </div>
   );
 };
 

@@ -1,0 +1,12 @@
+.app-header,
+.main-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.main-links a {
+  padding-left: 20px;
+}
