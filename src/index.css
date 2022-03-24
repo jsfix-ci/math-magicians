@@ -13,9 +13,34 @@ body {
   background-color: var(--light);
 }
 
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
 .calculator {
   width: 30%;
-  margin: auto 35%;
+}
+
+.calculator-quote p {
+  font-size: 30px;
+}
+
+.big-quote {
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+  font-size: 22px;
+}
+
+.home-cont {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.home-cont h2 {
+  margin-bottom: 30px;
 }
 
 .return-section {

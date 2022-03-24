@@ -1,7 +1,9 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Calculator from './components/Calculator';
-import { Routes, Route} from "react-router-dom";
-import Header from './components/header'
+import Header from './components/header';
+import Quote from './components/quote';
+import Home from './components/Home';
 
 class App extends React.Component {
   constructor(props) {
@@ -26,10 +28,11 @@ class App extends React.Component {
     const { digitObj } = this.state;
     return (
       <>
-        < Header />
+        <Header />
         <Routes>
-          <Route path="/" element={<Calculator updateState={this.updateState} digitObj={digitObj} />} />
-          {/* <Route path="about" element={<About />} /> */}
+          <Route path="/" element={<Home />} />
+          <Route path="calculator" element={<Calculator updateState={this.updateState} digitObj={digitObj} />} />
+          <Route path="quote" element={<Quote />} />
         </Routes>
       </>
     );
